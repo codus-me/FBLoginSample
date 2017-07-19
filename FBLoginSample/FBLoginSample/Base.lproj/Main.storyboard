@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FBLoginSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5iV-Zr-YlB">
+                                <rect key="frame" x="127.5" y="120" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="C4i-w6-7Mg"/>
+                                    <constraint firstAttribute="width" constant="120" id="bAc-Nd-sBQ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vuv-Fe-mkO">
+                                <rect key="frame" x="123" y="42" width="128" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="JHv-Ru-HNM"/>
+                                    <constraint firstAttribute="height" constant="30" id="ld4-EF-UUI"/>
+                                </constraints>
+                                <state key="normal" title="使用Facebook登入"/>
+                                <connections>
+                                    <action selector="bindFB" destination="BYZ-38-t0r" eventType="touchDown" id="68g-Mj-sC7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qcd-HK-pTz">
+                                <rect key="frame" x="67.5" y="270" width="240" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="3MN-8f-f1N"/>
+                                    <constraint firstAttribute="width" constant="240" id="aju-tF-8p6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbs-k1-RAE">
+                                <rect key="frame" x="67.5" y="321" width="240" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="7zS-3U-8Hq"/>
+                                    <constraint firstAttribute="height" constant="21" id="xk4-c7-rCj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qcd-HK-pTz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Kj-jw-pcV"/>
+                            <constraint firstItem="Vuv-Fe-mkO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="FU1-Jy-BZd"/>
+                            <constraint firstItem="5iV-Zr-YlB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="Lfj-23-Cdy"/>
+                            <constraint firstItem="tbs-k1-RAE" firstAttribute="top" secondItem="qcd-HK-pTz" secondAttribute="bottom" constant="30" id="P5h-F4-NGw"/>
+                            <constraint firstItem="qcd-HK-pTz" firstAttribute="top" secondItem="5iV-Zr-YlB" secondAttribute="bottom" constant="30" id="hP6-gu-1kD"/>
+                            <constraint firstItem="5iV-Zr-YlB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="i1B-cW-CPu"/>
+                            <constraint firstItem="Vuv-Fe-mkO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jvJ-kX-IpC"/>
+                            <constraint firstItem="tbs-k1-RAE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sYX-sj-4Xn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="avatarImageView" destination="5iV-Zr-YlB" id="dok-YB-Qx7"/>
+                        <outlet property="idLabel" destination="qcd-HK-pTz" id="yfU-O3-6EF"/>
+                        <outlet property="loginButton" destination="Vuv-Fe-mkO" id="q2L-sE-qfA"/>
+                        <outlet property="nameLabel" destination="tbs-k1-RAE" id="Gd5-1t-anS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>
